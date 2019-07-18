@@ -54,12 +54,16 @@ Page({
               wx.login({
                 success(res) {
                   if (res.code) {
+                    console.log('request id')
                     wx.request({
-                      url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx618195f6384cfb45&secret=&js_code=' + res.code+ '&grant_type=authorization_code',
+                      url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wx3914e0123af2227d&secret=d2ea583be35372c708a444891e6384aa&js_code=' + res.code+ '&grant_type=authorization_code',
                       data: {
                         code: res.code
                       },
                       success(r) {
+                        console.log(r)
+                      },
+                      complete(r){
                         console.log(r)
                       }
                     })

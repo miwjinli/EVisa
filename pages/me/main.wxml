@@ -1,0 +1,22 @@
+<!--pages/me/main.wxml-->
+<view class='container'>
+  <view class='header'>
+    <image class='background' src='../../images/malaysiamap.jpg' bindtap='clickLogin'></image>
+    <button class='btn' wx:if="{{!login}}" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">
+      <image style='width: 200rpx;height: 200rpx;border-radius: 200rpx;' src='{{imagepath}}'></image>
+    </button>
+    <image class='btn' wx:if="{{login}}" src='{{imagepath}}'></image>
+    <text>{{user}}</text>
+  </view>
+
+  <view class='body'>
+    <view class='body-item' bindtap='clickOrder'>
+      <image src='../../images/shopping.png'></image>
+      <text>我的订单</text>
+    </view>
+    <view class='body-item' bindtap='clickAboutUs'>
+      <image src='../../images/aboutus.png'></image>
+      <text>关于我们</text>
+    </view>
+  </view>
+</view>

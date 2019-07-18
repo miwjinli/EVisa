@@ -1,0 +1,79 @@
+/* pages/myorder/main.wxss */
+.container{
+  padding: 0 0 25rpx 0;
+  width: 100%;
+}
+page{
+  background-color: white;
+}
+.body{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.found{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+}
+
+.each{
+  padding: 20rpx 0 20rpx 0;
+  width: 100%;
+  border-bottom: 1rpx solid grey;
+  color: rgb(80, 80, 80);
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.each-item{
+  margin: 5rpx 3% 5rpx 3%;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.each text{
+  margin: 0 15rpx 0 15rpx;
+}
+
+.title{
+  padding: 25rpx 0 10rpx 0;
+  font-size: 40rpx;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.notfound{
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notfound image{
+  width: 60%;
+  height: 40%;
+  z-index: 1;
+}
+
+.notfound text{
+  padding-top: 20rpx;
+  color: grey;
+  text-align: center;
+  z-index: 10;
+}

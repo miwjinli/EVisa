@@ -1,0 +1,27 @@
+<!--pages/visa/main.wxml-->
+<view>
+  <view class="searchLetter touchClass">
+    <view wx:for="{{searchLetter}}" style="height:{{itemH}}px" wx:key="index" data-letter="{{item.name}}" catchtouchstart="searchStart" catchtouchmove="searchMove" catchtouchend="searchEnd">{{item.name}}</view>
+</view>
+ 
+<block wx:if="{{isShowLetter}}">
+<view class="showSlectedLetter">
+    {{showLetter}}
+</view>
+</block>
+
+<view>Selected：{{country}}</view>
+<scroll-view scroll-y="true" style="height:{{winHeight-20}}px;white-space:nowrap;width:100%" bindscroll="bindScroll" scroll-top="{{scrollTop}}">
+
+    <view class="selection" wx:for="{{countryList}}" wx:key="{{item.initial}}">
+        
+        <view class="item_letter">{{item.initial}}</view>
+        
+        <view class="item_city" wx:for="{{item.countryInfo}}" wx:for-item="ct" wx:key="{{ct.id}}" data-country="{{ct.country}}" bindtap="bindCity">
+              {{ct.country}} 
+        </view>
+
+    </view>
+
+</scroll-view>
+</view>

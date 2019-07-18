@@ -1,0 +1,43 @@
+<!--pages/myorderdetail/main.wxml-->
+<view class='container'>
+  <view class='body'>
+    <view class='upper'>
+      <text style='font-size:40rpx;font-weight:bold;'>订单号: {{list.id}}</text>
+      <view class='form'>
+        <view class='view-item'>
+          <text class='view-text'>申请日期</text>
+          <text class='view-input'>{{list.AppliedDate}}</text>
+        </view>
+
+        <view class='view-item'>
+          <text class='view-text'>申请人</text>
+          <text class='view-input'>{{list.PassportName}}</text>
+        </view>
+
+        <view class='view-item' style='border-bottom:none;'>
+          <text class='view-text'>状态</text>
+          <text class='view-input'>{{list.Status}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='lower'>
+      <text style='font-size:38rpx;font-weight:bold;'>更新消息</text>
+      <view class='form'>
+        <view wx:if="{{!found}}" class='notfound'>
+          <text style='font-size:35rpx;'>暂无消息哦~</text>
+        </view>
+        <view wx:if="{{found}}">
+          <view class='view-item' wx:for="{{comment}}" wx:key="unique">
+            <text class='view-text'>{{item.CommentDate}}</text>
+            <text class='view-input2'>{{item.comments}}</text>
+          </view>
+           <view class='view-item' style='border-bottom:none;'>
+            <text class='view-text'>{{last.CommentDate}}</text>
+            <text class='view-input2'>{{last.comments}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

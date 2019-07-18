@@ -1,0 +1,62 @@
+<!--pages/visa/main.wxml-->
+<!--
+<view class='container'>
+  <view class='items'>
+    <view wx:for="{{visa}}" wx:key='unique'>
+      <view class='each' bindtap='clickVisa' data-id='{{item.id}}'>
+        <image src='{{item.image}}'></image>
+        <view class='each-text'>
+          <text>{{item.name}}</text>
+          <text style='color:red;font-weight:600;font-size:35rpx;'>¥ {{item.price}} 起</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='upperbody'>
+    <text style='text-align:center;padding: 25rpx 0 25rpx 0;border-bottom:1px solid grey'>办理流程</text>
+
+    <view class='upperdetails-2' style="margin-top: 25rpx;">
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>1</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>提交订单</text>
+        <text>选择申请人户籍所在地或常住地， 选择出行及计划回国时间， 开始办理相关业务</text>
+      </view>
+    </view>
+
+    <view class='upperdetails-2'>
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>2</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>设置申请人， 上传申请资料</text>
+        <text>订单支付成功后， 选择申请人类型， 拍照上传申请资料， 系统开始审核</text>
+      </view>
+    </view>
+    <view class='upperdetails-2'>
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>3</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>在线审核提交申请表</text>
+        <text>校对申请表信息， 确认系统对比出的差异信息， 完成提交申请</text>
+      </view>
+    </view>
+
+    <view class='upperdetails-2' style="margin-bottom:30rpx;">
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>4</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>查询办理结果</text>
+        <text>系统在收到使馆移民局或签证中心海关的审理结果后， 客服通知到申请人， 同时系统上也可以自行查询办理结果</text>
+      </view>
+    </view>
+  </view>
+</view>-->

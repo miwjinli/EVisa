@@ -1,0 +1,2 @@
+/* pages/update/main.wxss */
+@import "../profile/main.wxss";

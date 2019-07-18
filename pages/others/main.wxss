@@ -1,0 +1,113 @@
+/* pages/others/main.wxss */
+@import "../profile/main.wxss";
+
+.textbox{
+  width: 300rpx;
+  color: rgb(94, 94, 94);
+  font-family: 'Arial Rounded';
+  font-size: 25rpx;
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+}
+
+.div{
+  color: #0094CC;
+  font-family: 'Arial Rounded';
+  font-size: 30rpx;
+  padding: 0 0 10rpx 0;
+}
+
+.button{
+  font-size:30rpx;
+  width: 280rpx;
+}
+
+.form{
+  width: 100%;
+  /*background-color: rgb(240, 240, 240);*/
+  font-size: 40rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.view-item{
+  display: flex;
+  flex-direction:row;
+  width:98%;
+  padding: 5%;
+  border-bottom: 1rpx solid rgb(180, 180, 180);
+}
+.view-text{
+  text-align: left;
+  padding-top: 70rpx;
+  padding-left: 5rpx;
+  font-weight: 500;
+  width: 38%;
+}
+.view-text2{
+  text-align: left;
+  padding-top: 35rpx;
+  padding-left: 5rpx;
+  font-weight: 500;
+  width: 38%;
+}
+.view-text3{
+  text-align: left;
+  padding-top: 50rpx;
+  padding-left: 5rpx;
+  font-weight: 500;
+  width: 38%;
+}
+.view-texts{
+  padding-top: 40rpx;
+  padding-left: 5rpx;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-align: left;
+  width: 38%;
+}
+
+.view-input{
+  width: 180rpx;
+  height: 150rpx;
+  margin-left: 50rpx;
+  color: grey;
+  font-size: 50rpx;
+  text-align: center;
+}
+.view-border{
+  width: 180rpx;
+  height: 150rpx;
+  margin-left: 50rpx;
+  color: grey;
+  font-size: 65rpx;
+  border: 2rpx dotted black;
+  border-radius: 25rpx;
+  position: relative;
+}
+.view-inputtext{
+  top: 22%;
+  left: 39%;
+  position: absolute;
+}
+.view-output{
+  padding-top: 10rpx;
+  font-size: 25rpx;
+  width: 80%;
+  height: 60rpx;
+  text-align: center;
+  display: -webkit-box ;
+ overflow: hidden; /*隐藏溢出的文本  */
+ text-overflow: ellipsis;
+ word-break: break-all;/*自动换行*/
+ -moz-box-orient: vertical; /*从上到下自动排列子元素*/
+ -webkit-box-orient: vertical; 
+ -webkit-line-clamp:2;
+}
+.output{
+  display: flex;
+  flex-direction:column;
+  width: 50%;
+  margin-left: 25rpx;
+  height: 210rpx;
+}

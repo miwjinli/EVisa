@@ -1,0 +1,47 @@
+<!--pages/visa/main.wxml-->
+<view class="container">
+  <view class='theme'>
+    <view class="title">
+      <text style='font-weight:600;'>马来西亚 E-Visa 签证</text>
+      <view class='line'></view>
+      <view class='progress'>
+        <text style='height:40rpx;width:44rpx;padding-top:2rpx;padding-bottom:2rpx;text-align:center;margin-top:-2rpx;'>1</text>
+        <text> </text>
+        <text> </text>
+        <text> </text>
+        <text> </text>
+      </view>
+
+    </view>
+    <view class="titledesc">
+      <text>上传个人照片</text>
+    </view>
+    <view>
+      <image style='width:{{imgwidth}}px; height:{{imgheight }}px;' id='pic' bindtap='showMenu' src='{{passport_image}}'></image>
+    </view>
+  </view>
+  <!--<view>
+    <button class='button'bindtap='setGallery'>Upload</button>
+    <button class='button'bindtap='setCamera'>From Camera</button>
+  </view>-->
+
+  <!--<view class='demo2'>
+    <calendar cell-size="30" days-color="{{demo2_days_style}}" header-style="demo2-header" board-style="demo2-board" weeks-type="full-en"/>
+  </view>-->
+  <view class="menu {{!menu? 'show': 'hidden'}}" style="visibility:{{!menu ? 'visible': 'hidden'}}">
+    <view class="menu-item">
+      <image class='menu-image' bindtap='setGallery' src='{{gallery}}'></image>
+      <text class='menu-text'>相册</text>
+    </view>
+    <view class="menu-item">
+      <image class='menu-image' bindtap='setCamera' src='{{camera}}'></image>
+      <text class='menu-text'>照相</text>
+    </view>
+  </view>
+
+  <view class="dialog-mask" style="visibility:{{!menu ? 'visible':'hidden'}}" bindtap="hideMenuTap" />
+
+  <view class='bottom'>
+    <button class='next' disabled='{{!upload}}' bindtap='setContinue'> 下一步 </button>
+  </view>
+</view>

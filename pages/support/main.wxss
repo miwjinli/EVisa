@@ -1,0 +1,51 @@
+/* pages/support/main.wxss */
+
+.body{
+  padding-top: 30%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content{
+  padding: 30rpx 100rpx 30rpx 100rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 25rpx;
+}
+
+.body button{
+  padding: 0;
+  height: 150rpx;
+  z-index: 2;
+  border-radius: 0rpx;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.body button::after {
+  border: none;
+}
+
+.body image{
+  width: 150rpx;
+  height: 150rpx;
+  z-index: 3;
+}
+
+.item{
+  margin: 30rpx 0 30rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item text{
+  padding-left: 30rpx;
+  font-size: 28rpx;
+}

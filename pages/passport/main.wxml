@@ -1,0 +1,52 @@
+<!--pages/passport/main.wxml-->
+<view class="container">
+  <view class='theme'>
+    <view class="title">
+      <text style='font-weight:600;'>马来西亚 E-Visa 签证</text>
+      <view class='line'></view>
+      <view class='progress'>
+        <text> </text>
+        <text style='height:40rpx;width:44rpx;padding-top:2rpx;padding-bottom:2rpx;text-align:center;margin-top:-2rpx;'>2</text>
+        <text> </text>
+        <text> </text>
+        <text> </text>
+      </view>
+    </view>
+    <view class="titledesc">
+      <text>上传护照页</text>
+      <text>(前页)</text>
+    </view>
+    <view>
+      <image class='photo' id='pic' src='{{front}}' bindtap='showFrontMenu'></image>
+      <!--<image class='photo' id='pic' src='{{front}}' bindtap='clickfront'></image>-->
+      <!--<button class='button'bindtap='setUploadFront'>Upload</button>-->
+    </view>
+
+    <view class="titledesc" style='margin-top:50rpx'>
+      <text>上传护照页</text>
+      <text>(后页)</text>
+    </view>
+    <view>
+      <image class='photo' id='pic' src='{{back}}' bindtap='showBackMenu'></image>
+      <!--<image class='photo' id='pic' src='{{back}}' bindtap='clickback'></image>-->
+      <!--<button class='button'bindtap='setUploadBack'>Upload</button>-->
+    </view>
+  </view>
+
+  <view class="menu {{!menufront || !menuback? 'show': 'hidden'}}" style="visibility:{{!menufront || !menuback ? 'visible': 'hidden'}}">
+    <view class="menu-item">
+      <image class='menu-image' bindtap='setGallery' src='{{gallery}}'></image>
+      <text class='menu-text'>相册</text>
+    </view>
+    <view class="menu-item">
+      <image class='menu-image' bindtap='setCamera' src='{{camera}}'></image>
+      <text class='menu-text'>照相</text>
+    </view>
+  </view>
+
+  <view class="dialog-mask" style="visibility:{{!menufront || !menuback ? 'visible':'hidden'}}" bindtap="hideMenuTap" />
+
+  <view class='bottom'>
+    <button class='next' disabled='{{!upload1 || !upload2}}' bindtap='setContinue'> 下一步 </button>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/support/main.wxml-->
+<view class='container'>
+  <view class='body'>
+    <view class='content'>
+      <view class='item'>
+        <button open-type='contact'>
+          <image src='../../images/support.png'>
+          </image>
+          <text>客服服务</text>
+        </button>
+      </view>
+      <text>或者</text>
+      <view class='item' bindtap='clickCall'>
+        <image src='../../images/call.png' ></image>
+        <text>拨打电话</text>
+      </view>
+    </view>
+  </view>
+</view>
