@@ -1,0 +1,17 @@
+<!--pages/cover/main.wxml-->
+<camera device-position="{{position?'front':'back'}}" flash="off" binderror="error" frame-size="large" class="camera">
+
+<cover-view class='camerabgImage-view'>
+  <cover-image class="bgImage" src='{{picture?picturepath:front?frontpath:backpath}}'></cover-image>
+
+</cover-view>
+
+<cover-view class='bgFlip' bindtap='flip'>
+    <cover-image src='{{flip}}'></cover-image>
+  </cover-view>
+
+<cover-view class='cover' bindtap="takePhoto">拍照</cover-view>
+  </camera>
+
+  <canvas canvas-id="mycanvas" class='canvas' wx:if="{{!picture}}">
+  </canvas>

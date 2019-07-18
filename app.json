@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/firstpage/main",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/profile/main",
+    "pages/passport/main",
+    "pages/others/main",
+    "pages/details/main",
+    "pages/address/main",
+    "pages/update/main",
+    "pages/picker/main",
+    "pages/cover/main",
+    "pages/main/main",
+    "pages/me/main",
+    "pages/myorder/main",
+    "pages/support/main",
+    "pages/visa/main",
+    "pages/guide/main",
+    "pages/myorderdetail/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#33CCFF",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/firstpage/main",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/visa/main",
+        "text": "签证",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order-selected.png"
+      },
+      {
+        "pagePath": "pages/guide/main",
+        "text": "攻略",
+        "iconPath": "images/compass.png",
+        "selectedIconPath": "images/compass-selected.png"
+      },
+      {
+        "pagePath": "pages/support/main",
+        "text": "客服",
+        "iconPath": "images/supportmain.png",
+        "selectedIconPath": "images/supportmain-selected.png"
+      },
+      {
+        "pagePath": "pages/me/main",
+        "text": "我的",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me-selected.png"
+      }
+    ]
+  }
+}

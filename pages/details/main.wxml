@@ -1,0 +1,86 @@
+<!--pages/details/main.wxml-->
+<view class="container">
+  <view class='theme'>
+    <view class="title">
+      <text style='font-weight:600;'>马来西亚 E-Visa 签证</text>
+      <view class='line'></view>
+      <view class='progress'>
+        <text> </text>
+        <text> </text>
+        <text> </text>
+        <text style='height:40rpx;width:44rpx;padding-top:2rpx;padding-bottom:2rpx;text-align:center;margin-top:-2rpx;'>4</text>
+        <text> </text>
+      </view>
+    </view>
+    <view class="titledesc">
+      <text>护照 - 信息</text>
+    </view>
+    <view class='form'>
+      <view class='view-item'>
+        <text class='view-text2'>护照名称</text>
+        <input class='view-input2' bindinput='bindName' placeholder='全名'></input>
+      </view>
+
+      <view class='view-item'>
+        <text class='view-text'>护照种类</text>
+        <view class='view-input'>
+          <picker bindchange="bindPassportTypeChange" value="{{typeindex}}" range="{{passportType}}" class="picker">
+            <text wx:if="{{typeindex == -1}}">请选择</text>
+            <text wx:if="{{typeindex != -1}}">{{passportType[typeindex]}}</text>
+          </picker>
+        </view>
+      </view>
+
+      <view class='view-item'>
+        <text class='view-text'>派发国家</text>
+        <view class='view-input'>
+          <text bindtap='selectIssueCountry' wx:if="{{!iCountry}}">请选择</text>
+          <text bindtap='selectIssueCountry' wx:if="{{iCountry }}">{{iCountry}}</text>
+        </view>
+      </view>
+
+      <view class='view-item'>
+        <text class='view-text'>护照派发日</text>
+        <view class='view-input'>
+          <text bindtap='showIssueModal'>{{issueDate}}</text>
+        </view>
+      </view>
+
+      <view class='view-item'>
+        <text class='view-text2'>护照号码</text>
+        <input class='view-input2' bindinput='bindPassportNumber' maxlength='15' placeholder='在这输入'></input>
+      </view>
+
+      <view class='view-item'>
+        <text class='view-text2'>前护照号码</text>
+        <input class='view-input2' bindinput='bindPreviousPassportNumber' maxlength='15' placeholder='在这输入'></input>
+      </view>
+
+      <view class='view-item' style='border:none;'>
+        <text class='view-text'>护照到期日</text>
+        <view class='view-input'>
+          <text bindtap='showExpModal'>{{expiryDate}}</text>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+
+  <view class='bottom'>
+    <button class='next' disabled="{{issueindex == -1 || typeindex == -1 || !dateupdate || !expdateupdate || passportNumber == '' || previousPassportNumber == ''}}" bindtap='setContinue'> 下一步 </button>
+  </view>
+</view>
+
+<modal hidden='{{hideIssueDate}}' bindconfirm="modalIssueConfirm" bindcancel="modalIssueCancel" confirm-text="确认" cancel-text="取消">
+  <view class='demo2'>
+    <calendar cell-size="30" days-color="{{issue_days_style}}" header-style="demo2-header" board-style="demo2-board" weeks-type="cn" binddateChange='issueDateChange' binddayClick='issueDayClick' bindnextMonth='issueDateChange' bindprevMonth='issueDateChange'
+    />
+  </view>
+</modal>
+
+<modal hidden='{{hideExpDate}}' bindconfirm="modalExpConfirm" bindcancel="modalExpCancel" confirm-text="确认" cancel-text="取消">
+  <view class='demo2'>
+    <calendar cell-size="30" days-color="{{exp_days_style}}" header-style="demo2-header" board-style="demo2-board" weeks-type="cn" binddateChange='expDateChange' bindnextMonth='expDateChange' bindprevMonth='expDateChange' binddayClick='expDayClick' />
+  </view>
+</modal>

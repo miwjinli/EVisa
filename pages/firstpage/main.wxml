@@ -1,0 +1,49 @@
+<!--pages/firstpage/main.wxml-->
+<view class="container">
+  <view class='heading'>
+    <image style='width:100%;height:{{imageheight}}px;' src='../../images/welcome.jpg'>
+    </image>
+
+    <view class='headtitle'>
+      <view class='title-item'>
+        <image src='../../images/preparedoc.png'></image>
+        <text>准备材料</text>
+      </view>
+
+      <text style='font-size:35rpx;'>></text>
+
+      <view class='title-item'>
+        <image src='../../images/uploadfile.png'></image>
+        <text>上传材料</text>
+      </view>
+
+      <text style='font-size:35rpx;'>></text>
+
+      <view class='title-item'>
+        <image src='../../images/checkfile.png'></image>
+        <text>审核送签</text>
+      </view>
+
+      <text style='font-size:35rpx;'>></text>
+
+      <view class='title-item'>
+        <image src='../../images/delivery.png'></image>
+        <text>出签配送</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='body'>
+    <text style='font-weight:bold;font-size: 45rpx;'>签证服务</text>
+    <view bindtap='clickProceed'>
+      <image class='body-image' src='../../images/background.png'></image>
+      <view class='bodycontent'>
+        <image src='../../images/malaysia.png' class='logo'></image>
+        <text style='font-weight:bold;font-size: 35rpx;color:black;'>马来西亚 EVisa 签证</text>
+        <text>高出签率 可加急 全程短信跟踪</text>
+        <text style='font-weight:bold;font-size: 35rpx;color:red;'>¥ 399 起</text>
+      </view>
+    </view>
+  </view>
+
+</view>

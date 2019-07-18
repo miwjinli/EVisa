@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">
+    <text>Malaysia e-visa application</text>
+  </view>
+  <view class="country">
+    <text class="country-title">Eligible Countries</text>
+    <image class="country-icon" src="{{country.bangladesh}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.bhutan}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.china}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.india}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.montenegro}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.nepal}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.bhutan}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.serbia}}" mode="cover"></image>
+    <image class="country-icon" src="{{country.srilanka}}" mode="cover"></image>
+  </view>
+  <view class="button">
+  <button open-type='getUserInfo' bindtap='setContinue'>Continue</button>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

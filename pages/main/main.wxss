@@ -1,0 +1,250 @@
+/* pages/main/main.wxss */
+@import "../profile/main.wxss";
+page{
+  background-color: #dadada;
+}
+.container {
+  padding: 0 0 25rpx 0;
+}
+
+.heading {
+  color: black;
+  font-size: 33rpx;
+  width: 94%;
+  padding: 0 3% 0 3%;
+  background-color: white;
+}
+
+.frame {
+  color: white;
+  background-color: lightcoral;
+  border: 1px solid lightcoral;
+  border-radius: 5px;
+  margin-top: 15rpx;
+}
+
+.frame-item {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.frame-title {
+  font-size: 60rpx;
+  padding: 30rpx 0 30rpx 0;
+}
+
+.frame-subheading {
+  padding: 0 0 10rpx 0;
+}
+
+.sub-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 30rpx;
+  padding: 10rpx;
+  width: 20%;
+  border-left: 1px solid white;
+}
+
+.text-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.heading-image {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.heading-image image {
+  width: 100rpx;
+  height: 80rpx;
+}
+
+.heading-image text {
+  font-size: 26rpx;
+  color: grey;
+}
+
+.image-item {
+  width: 150rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperbody {
+  margin-top: 30rpx;
+  font-size: 33rpx;
+  width: 94%;
+  padding: 0 3% 0 3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selection-person {
+  display: flex;
+  width: 100%;
+  padding: 25rpx 0 25rpx 0;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1rpx solid grey;
+}
+
+.selection-person image {
+  width: 55rpx;
+  height: 60rpx;
+}
+
+.image-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-button text {
+  font-size: 25rpx;
+}
+
+.upperdetails {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upperdetails-item {
+  margin-top: 25rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.upperdetails-item image {
+  width: 80rpx;
+  height: 75rpx;
+}
+
+.uppderdetails-itemdetails {
+  width: 80%;
+  padding: 0 0 0 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.uppderdetails-itemdetails text {
+  color: grey;
+  padding: 5rpx 0 5rpx 0;
+  font-size: 28rpx;
+}
+
+.buttons {
+  margin-top: 5rpx;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 90%;
+  height: 10%;
+  z-index: 999;
+  display: flex;
+  flex-direction: row;
+}
+
+.startbutton {
+  width: 80%;
+}
+
+.start {
+  padding: 0;
+  margin-top: 3%;
+  height: 70%;
+  color: white;
+  font-size: 36rpx;
+  background-color: rgb(255, 123, 0);
+  border-radius: 40rpx;
+  width: 95%;
+}
+
+.supportbutton {
+  width: 20%;
+}
+
+.support {
+  padding: 0;
+  margin-top: 3%;
+  height: 90%;
+}
+
+.support-view {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+  font-size: 28rpx;
+}
+
+.support-view image {
+  margin-top: 10rpx;
+  width: 45%;
+  height: 50rpx;
+}
+
+.support-view text {
+  margin-top: -10rpx;
+}
+
+.upperdetails-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.details-line {
+  width: 15%;
+}
+
+.line {
+  width: 44.5%;
+  height: 100%;
+  border-right: 15rpx solid orange;
+  position: relative;
+}
+
+.details-line text {
+  position: absolute;
+  top: 50rpx;
+  left: 4%;
+  width: 7%;
+  color: white;
+  text-align: center;
+  background-color: orange;
+  border-radius: 25rpx;
+}
+
+.details-item {
+  padding-top: 50rpx;
+  padding-bottom: 30rpx;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  font-size: 28rpx;
+}
+
+.body-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

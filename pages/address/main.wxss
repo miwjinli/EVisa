@@ -1,0 +1,104 @@
+/* pages/address/main.wxss */
+@import "../profile/main.wxss";
+.input{
+  padding: 5rpx 5rpx 5rpx 10rpx;
+  font-size: 35rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+}
+
+.dropdown{
+  font-size: 35rpx;
+  height: 80rpx;
+  padding: 0 20rpx 0 10rpx;
+}
+
+.picker{
+  margin-bottom: 30rpx;
+}
+
+.form{
+  width: 100%;
+  /*background-color: rgb(240, 240, 240);*/
+  font-size: 32rpx;
+  font-family: "宋体";
+}
+
+.view-item{
+  display: flex;
+  flex-direction:row;
+  width:98%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 15rpx;
+  padding-bottom:15rpx;
+  border-bottom: 1rpx solid rgb(180, 180, 180);
+}
+.view-text{
+  text-align: left;
+  font-size: 32rpx;
+  padding-left: 5rpx;
+  font-weight: 500;
+  width: 20%;
+  color: grey;
+}
+.view-text2{
+  font-size: 32rpx;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  text-align: left;
+  padding-left: 5rpx;
+  font-weight: 500;
+  width: 20%;
+  color: grey;
+}
+.view-input{
+  padding-top: 10rpx;
+  padding-right: 10rpx;
+  font-size: 35rpx;
+  width: 80%;
+  text-align: right;
+}
+.view-input2{
+  padding-top: 15rpx;
+  padding-right: 15rpx;
+  font-size: 35rpx;
+  width: 80%;
+  text-align: right;
+}
+.view-input3{
+  padding-top: 25rpx;
+  padding-right: 10rpx;
+  font-size: 35rpx;
+  width: 80%;
+  text-align: right;
+}
+
+.form-text{
+  font-size: 30rpx;
+}
+
+.form-item{
+  width:80%;
+}
+
+.input2{
+  padding: 5rpx 5rpx 5rpx 10rpx;
+  font-size: 35rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  background-color: white;
+  width:80%;
+}
+.err{
+  width: 18%;
+  margin-left: 5rpx;
+  font-size: 20rpx;
+  color: red;
+  padding: 5rpx 5rpx 5rpx 10rpx; 
+}
+.align{
+  display: flex;
+  flex-direction: row;
+}
