@@ -1,0 +1,68 @@
+/* pages/passport/main.wxss */
+@import "../profile/main.wxss";
+
+.photo {
+  width: 200px;
+  height: 125px;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  height: 20%;
+  z-index: 10;
+  width: 100%;
+  top: 80%;
+  left: 0;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  font-size: 11pt;
+  color: #bdbdbd;
+  background-color: rgb(230, 230, 230);
+}
+
+.menu-item {
+  width: 70rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-text {
+  font-size: 25rpx;
+  color: rgb(58, 58, 58);
+  padding-left: 10rpx;
+}
+
+.menu-image {
+  border-radius: 20rpx;
+  background-color: white;
+  padding: 20rpx;
+  margin-top: 1%;
+  width: 60rpx;
+  height: 50rpx;
+}
+
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.hidden.menu {
+  transform: translateY(20%);
+  transition: all 0.2s ease;
+  visibility: hidden;
+}
+
+.show.menu {
+  transform: translateY(0rpx);
+  transition: all 0.2s ease;
+  visibility: visible;
+}

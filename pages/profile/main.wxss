@@ -1,0 +1,273 @@
+/* pages/visa/main.wxss */
+page{
+  background-color: white;
+}
+
+.container {
+  padding: 0 0 25rpx 0;
+}
+
+.theme{
+  margin: 0 0 30rpx 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*background-color: white;*/
+  padding: 30rpx 0 10rpx 0;
+}
+
+.line{
+  margin-top: 40rpx;
+  border-bottom: 8rpx solid orange;
+  width: 100%;
+}
+
+.progress{
+  margin-top: -27rpx;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 28rpx;
+}
+
+.progress text{
+  color: white;
+  border: 1rpx solid orange;
+  border-radius: 50rpx;
+  width: 25rpx;
+  height: 25rpx;
+  background-color: orange;
+  margin: 0 5rpx 0 5rpx;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*color: #0094CC;*/
+  font-family: 'Arial Rounded';
+  font-size: 45rpx;
+  padding: 0 0 25rpx 0;
+  color:black;
+}
+
+.title text{
+  margin: 10rpx 0 10rpx 0;
+}
+
+.titledesc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*color: #0094CC;*/
+  color: rgb(60, 60, 60);
+  font-family: "宋体";
+  font-size: 40rpx;
+  padding: 0 0 25rpx 0;
+  font-weight: 600;
+}
+
+.button{
+  margin-top: 5px;
+}
+
+.photo{
+  width: 100px;
+  height: 100px;
+}
+
+.bottom{
+  margin-top: 10px;
+  margin-left: 15%;
+  width: 70%;
+  margin-right: 15%;
+  margin-bottom: 10px;
+}
+
+.next{
+  background-color: rgb(255, 123, 0);
+  color:white;
+  border-radius: 100rpx;
+}
+
+
+
+.camera{
+  width: 100%;
+  height: 100%;
+}
+ 
+.cover-1{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 150rpx;
+  background-color: #dedcdc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 60rpx;
+  left: 300rpx;
+}
+.cover-3{
+  position: absolute;
+  bottom: 105rpx;
+  left:135rpx;
+}
+
+.cover-4{
+  position: absolute;
+  top: 60rpx;
+  right:40rpx;
+}
+.cover-2{
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 110rpx;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color:#da2121;
+  font-size: 32rpx;
+}
+
+
+
+
+/* pages/demo/index.wxss */
+
+.calendar-box {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-image: linear-gradient(to bottom, #6295eb 0%, #586fc2 50%, #5052a4 100%);
+    box-shadow: 0px 11px 2px 1px rgba(234, 234, 229, 0.3);
+}
+
+.calendar-box .left {
+    width: 30%;
+    text-align: center;
+}
+
+.calendar-box .left .today {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;    
+    background-color: #ef7a82;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.calendar-box .left .today p {
+    font-size: 2rem;    
+}
+
+.calendar-box .left .today .monthStr {
+    font-size: 0.8rem;
+}
+
+.calendar-box .right {
+    width: 70%;
+    font-size: 12px;
+}
+
+.calendar-box .right .box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo2 {
+    background-image: linear-gradient(to bottom, #2e5d91 0%, #2f3e79 100%);
+    padding-top: 10px;
+    padding-bottom: 10px;    
+}
+
+.demo2-header {
+    font-size: large;
+    color: #3ed7f6;
+}
+
+
+.demo2-board {
+    color: #3ed7f6;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap ;
+  height: 20%;
+  z-index: 10;
+  width: 100%;
+  top: 80%;
+  left: 0;
+  align-items:center;
+  justify-content: space-around;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  font-size: 11pt;
+  color: #bdbdbd;
+  background-color: rgb(230, 230, 230);
+}
+.menu-item{
+  width: 70rpx;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.menu-text{
+  font-size: 25rpx;
+  color: rgb(58, 58, 58);
+  padding-left: 10rpx;
+}
+
+.menu-image{
+  border-radius: 20rpx;
+  background-color: white;
+  padding: 20rpx;
+  margin-top: 1%;
+  width: 60rpx;
+  height: 50rpx;
+}
+
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hidden.menu {
+  transform: translateY(20%);
+  transition: all 0.2s ease;
+  visibility: hidden;
+}
+
+.show.menu {
+  transform: translateY(0rpx);
+  transition: all 0.2s ease;
+  visibility: visible;
+}
+
+.bottom button:disabled,
+.bottom button[disabled]{
+  background-color: rgb(255, 216, 144);
+  color: white;
+}

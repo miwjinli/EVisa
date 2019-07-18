@@ -1,0 +1,64 @@
+<!--pages/others/main.wxml-->
+<view class="container">
+  <view class='theme'>
+    <view class="title">
+      <text style='font-weight:600;'>马来西亚 E-Visa 签证</text>
+      <view class='line'></view>
+      <view class='progress'>
+        <text> </text>
+        <text> </text>
+        <text style='height:40rpx;width:44rpx;padding-top:2rpx;padding-bottom:2rpx;text-align:center;margin-top:-2rpx;'>3</text>
+        <text> </text>
+        <text> </text>
+      </view>
+    </view>
+    <view class="titledesc">
+      <text>上传支持文件</text>
+    </view>
+    <view class='form'>
+      <view class='view-item'>
+        <text class='view-text'>飞机票</text>
+        <view class='output'>
+          <view class='view-border' bindtap='setUploadFlight' wx:if="{{!flightimage}}">
+            <text class='view-inputtext'>+</text>
+          </view>
+          <image class='view-input' bindtap='setUploadFlight' wx:if="{{flightimage}}" src='{{flightimage}}'></image>
+          <text class='view-output'>{{flight}}</text>
+        </view>
+      </view>
+
+      <view class='view-item'>
+        <view class='view-texts'>
+          <text>酒店订单</text>
+          <text>(可选)</text>
+        </view>
+
+        <view class='output'>
+          <view class='view-border' bindtap='setUploadHotel' wx:if="{{!hotelimage}}">
+            <text class='view-inputtext'>+</text>
+          </view>
+          <image class='view-input' bindtap='setUploadHotel' wx:if="{{hotelimage}}" src='{{hotelimage}}'></image>
+          <text class='view-output'>{{hotel}}</text>
+        </view>
+      </view>
+
+      <view class='view-item' style='border-bottom:none'>
+        <view class='view-texts'>
+          <text>其他</text>
+          <text>(可选)</text>
+        </view>
+        <view class='output'>
+          <view class='view-border' bindtap='setUploadOthers' wx:if="{{!otherimage}}">
+            <text class='view-inputtext'>+</text>
+          </view>
+          <image class='view-input' bindtap='setUploadOthers' wx:if="{{otherimage}}" src='{{otherimage}}'></image>
+          <text class='view-output'>{{other}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='bottom'>
+    <button class='next' disabled='{{!upload}}' bindtap='setContinue'> 下一步 </button>
+  </view>
+</view>

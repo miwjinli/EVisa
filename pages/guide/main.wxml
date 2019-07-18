@@ -1,0 +1,25 @@
+<!--pages/guide/main.wxml-->
+<view class='container'>
+  <view class='body'>
+    <text style='fond-size:40rpx;font-weight:600;padding-top:10%;text-align:center'>关于马来西亚</text>
+    <view class='content'>
+      <image src='../../images/guide1.png'></image>
+      <view class='content-text'>
+        <text>◆ 了解马来西亚，便会爱上马来西亚。</text>
+        <text>◆ 这是一个种族和宗教的熔炉，充满生气，热闹非凡。</text>
+        <text>◆ 马来西亚包括 <text style='font-size:35rpx;font-weight:600;'>3</text> 大种族 (马来人、印度人、华人) 及其他族群的共同家园， 大家互敬互爱、和睦相处。</text>
+      </view>
+    </view>
+
+    <view class='content2'>
+      <view class='content-text2'>
+        <text>◆ 多元文化不仅让马来西亚成为美食天堂，还孕育了丰富多彩的节庆文化。</text>
+        <text>◆ 马来西亚人性情闲雅、热情友好。</text>
+        <text>◆ 马来西亚的地理多姿多彩，一如她的文化。</text>
+        <text>◆ 最令人着迷的，是马来西亚的强烈反差。</text>
+        <text>◆ 摩天大厦俯视着高脚木屋，五星酒店与古老的礁石仅相隔数米。</text>
+      </view>
+      <image src='../../images/guide2.jpg'></image>
+    </view>
+  </view>
+</view>

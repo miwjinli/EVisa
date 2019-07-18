@@ -1,0 +1,295 @@
+<!--pages/main/main.wxml-->
+<view class="container">
+  <view class="heading">
+    <text>马来西亚EVISA-30天单次电子签证（全国）</text>
+
+    <view class='frame'>
+      <view class='frame-item'>
+        <text class='frame-title'>¥ 399</text>
+      </view>
+      <view class='frame-item'>
+        <text class='frame-subheading'>办理时长2工作日</text>
+      </view>
+      <view class='frame-item' style='margin: 30rpx 0 30rpx 0;'>
+        <view class='sub-item' style='border-left: none;'>
+          <view class='text-item'>
+            <text>1月</text>
+          </view>
+          <view class='text-item'>
+            <text>有效期</text>
+          </view>
+        </view>
+        <view class='sub-item'>
+          <view class='text-item'>
+            <text>30天</text>
+          </view>
+          <view class='text-item'>
+            <text>最长停留</text>
+          </view>
+        </view>
+        <view class='sub-item'>
+          <view class='text-item'>
+            <text>1次</text>
+          </view>
+          <view class='text-item'>
+            <text>入境次数</text>
+          </view>
+        </view>
+        <view class='sub-item'>
+          <view class='text-item'>
+            <text>99%</text>
+          </view>
+          <view class='text-item'>
+            <text>出签率</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='heading-image'>
+      <view class='image-item'>
+        <image src='../../images/refund.png'></image>
+        <view>
+          <text>拒签退全款</text>
+        </view>
+      </view>
+
+      <view class='image-item'>
+        <image src='../../images/nofee.png'></image>
+        <view>
+          <text>免缴担保金</text>
+        </view>
+      </view>
+      <view class='image-item'>
+        <image src='../../images/online.png'></image>
+        <view>
+          <text>免面签</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='upperbody'>
+    <text style='text-align:center;padding: 25rpx 0 25rpx 0;border-bottom:1px solid grey'>所需材料</text>
+    <view class='selection-person'>
+      <view class='image-button' bindtap='clickChild'>
+        <image src='../../images/child.png'></image>
+        <view>
+          <text style="color:{{child?'orange':'grey'}}">学龄前儿童</text>
+        </view>
+      </view>
+      <view class='image-button' bindtap='clickStudent'>
+        <image src='../../images/student.png'></image>
+        <view>
+          <text style="color:{{student?'orange':'grey'}}">在校学生</text>
+        </view>
+      </view>
+      <view class='image-button' bindtap='clickFreelancer'>
+        <image src='../../images/freelancer.png'></image>
+        <view>
+          <text style="color:{{freelancer?'orange':'grey'}}">自由职业者</text>
+        </view>
+      </view>
+      <view class='image-button' bindtap='clickProfessional'>
+        <image src='../../images/employee.png'></image>
+        <view>
+          <text style="color:{{professional?'orange':'grey'}}">在职人员</text>
+        </view>
+      </view>
+      <view class='image-button' bindtap='clickRetiree'>
+        <image src='../../images/retiree.png'></image>
+        <view>
+          <text style="color:{{retiree?'orange':'grey'}}">退休人员</text>
+        </view>
+      </view>
+      <view class='image-button' bindtap='clickUnemployed'>
+        <image src='../../images/unemploy.png'></image>
+        <view>
+          <text style="color:{{unemployed?'orange':'grey'}}">无业</text>
+        </view>
+      </view>
+    </view>
+
+    <view class='upperdetails'>
+      <view class='upperdetails-item' style='margin-bottom:25rpx;'>
+        <image src='../../images/camera.jpg'></image>
+        <view class='uppderdetails-itemdetails'>
+          <text style='font-size:40rpx;font-weight: bold;color:black;'>拍摄资料</text>
+          <text style='font-size:32rpx;color:black;'>全程酒店英文订单<text style="color:red;">*</text> </text>
+          <text>酒店覆盖出行全程， 订单有申请人姓名， 入住时间与出行时间相符</text>
+          <text>清晰完整文字可辨认识别</text>
+
+          <text style='font-size:32rpx;color:black;margin-top:10rpx;'>往返计票英文订单<text style="color:red;">*</text></text>
+          <text>真实有效出票单， 有电子票号ETKTNBR 13位数字 (3位航司代码，10位票号)</text>
+
+          <text style='font-size:32rpx;color:black;margin-top:10rpx;'>护照签名页<text style="color:red;">*</text></text>
+          <text>申请人护照签名页</text>
+
+          <text style='font-size:32rpx;color:black;margin-top:10rpx;'>照片-两寸两张<text style="color:red;">*</text></text>
+          <text>近六个月拍摄正面免冠， 白色背景彩色照片， 照片大小35mm x 45mm， 露出双耳、眉毛以及其他五官， 不露牙齿， 不佩带首饰， 佩戴眼镜不可反光</text>
+          <text>请使用电子原版上传</text>
+        </view>
+      </view>
+
+      <!--<view class='upperdetails-item'>
+        <image src='../../images/mail.png'></image>
+        <view class='uppderdetails-itemdetails'>
+          <text style='font-size:40rpx;font-weight: bold;color:black;'>邮寄材料</text>
+        </view>
+      </view>
+
+      <view class='upperdetails-item' style='margin-bottom:25rpx;'>
+        <image src='../../images/document.png'></image>
+        <view class='uppderdetails-itemdetails'>
+          <text style='font-size:40rpx;font-weight: bold;color:black;'>携带材料</text>
+        </view>
+      </view>-->
+    </view>
+  </view>
+
+  <view class='upperbody'>
+    <text style='text-align:center;padding: 25rpx 0 25rpx 0;border-bottom:1px solid grey'>基本信息</text>
+    <view class='upperdetails'>
+      <view class='upperdetails-item'>
+        <image src='../../images/document.png'></image>
+        <view class='uppderdetails-itemdetails'>
+          <text style='font-size:40rpx;font-weight: bold;color:black;'>服务明细</text>
+          <text>1. 此产品为签证服务套餐， 费用包括使馆官费、咨询服务费、国内快递费等， 受理全球范围内中国护照的申请;</text>
+          <text></text>
+          <text></text>
+
+          <text>2. 提交申请后可以获得马来西亚大使馆签发的Evisa电子签证， 有效期三个月， 最多停留30天， 单次入境;</text>
+          <text></text>
+          <text></text>
+
+          <text>3. 在线提交订单， 微信支付费用后， 填写使馆事由， 拍照上传申请资料， 在线填写申请表， 选择签证返还方式， 只需四步即可快速获签， 无需邮寄资料、 无需本人前往使馆;</text>
+          <text></text>
+          <text></text>
+
+          <text>4. 第一步使馆事由， 选择赶馆日期（此签证申请无需前往使馆， 可任意选择）及取证方式; 第二步申请资料， 按提示要求上传申请资料， 护照首页、照片、机票订单和住宿订单; 第三步个人信息， 分项填写后， 选择第四步快递地址; 使馆签发签证后， 同时以快递和邮件两种方式发送至申请人入境使用;</text>
+          <text></text>
+          <text></text>
+
+          <text>5. EVISA电子签证使用时不限制入境关口， 可全世界出入， 方便快速， 适合所有口岸所有方式出入马来西亚;</text>
+          <text></text>
+          <text></text>
+
+          <text>6. 支付费用后在线办理全程一对一24小时人工专属服务解答您的各种疑问（电话微信随时联系）;</text>
+          <text></text>
+          <text></text>
+
+          <text>7. 资深签证专员审核资料， 并告知材料是否完整准确，确保快速出签， 拒签全额退款</text>
+        </view>
+      </view>
+
+      <view class='upperdetails-item'>
+        <image src='../../images/area.png'></image>
+        <view class='uppderdetails-itemdetails'>
+          <text style='font-size:40rpx;font-weight: bold;color:black;'>受理范围</text>
+          <text>1. 仅限持有以下国家护照（中国、印度、不丹、缅甸、黑山共和国、塞尔维亚、孟加拉国、斯里兰卡、巴基斯坦、尼泊尔）的申请人， 可以办理此签证;</text>
+          <text></text>
+          <text></text>
+
+          <text>2. 持有中国护照的维族、藏族需提交额外资料;</text>
+          <text></text>
+          <text></text>
+
+          <text>3. 以上国家申请人已经在马来西亚、新加坡、以色列境内的不能再申请此签证;</text>
+        </view>
+      </view>
+
+      <view class='upperdetails-item' style='margin-bottom:25rpx;'>
+        <image src='../../images/aboutus.png'></image>
+        <view class='uppderdetails-itemdetails'>
+          <text style='font-size:40rpx;font-weight: bold;color:black;'>办理须知</text>
+          <text>1. 此签证过签率99.99%， 提交后最快半小时内即可获得签证， 但仍建议您在出行前一周开始办理;</text>
+          <text></text>
+          <text></text>
+
+          <text>2. 办理此签证的维族、藏族需要提供身份证复印件， 正反面在一页纸上; 复印件上注明申请人工作单位、职业， 出境目的以及前往城市等;</text>
+          <text></text>
+          <text></text>
+
+          <text>3. 获得签证后， 应在签证有效期内使用; 有签证而未使用者， 在签证到期后有三个月的"冷静期"， 不到三个月申请签证拒签概率很大;</text>
+          <text></text>
+          <text></text>
+
+          <text>4. 此签证可以在世界任何一个城市申请并单次进入马来西亚， 但不能用于在马来西亚境内学习、工作定居等;</text>
+          <text></text>
+          <text></text>
+
+          <text>5. 有拒签记录或逾期遣返记录者请选用"专家咨询服务配套"以确保顺利获得签证。</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--<view class='upperbody'>
+    <text style='text-align:center;padding: 25rpx 0 25rpx 0;border-bottom:1px solid grey'>办理流程</text>
+    <view class='upperdetails-2' style="margin-top: 25rpx;">
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>1</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>提交订单</text>
+        <text>选择申请人户籍所在地或常住地， 选择出行及计划回国时间， 开始办理相关业务</text>
+      </view>
+    </view>
+
+    <view class='upperdetails-2'>
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>2</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>设置申请人， 上传申请资料</text>
+        <text>订单支付成功后， 选择申请人类型， 拍照上传申请资料， 系统开始审核</text>
+      </view>
+    </view>
+
+    <view class='upperdetails-2'>
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>3</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>在线审核提交申请表</text>
+        <text>校对申请表信息， 确认系统对比出的差异信息， 完成提交申请</text>
+      </view>
+    </view>
+
+    <view class='upperdetails-2' style="margin-bottom:30rpx;">
+      <view class='details-line'>
+        <view class='line'></view>
+        <text>4</text>
+      </view>
+      <view class='details-item'>
+        <text style='font-size:33rpx;font-weight: bold;color:black;padding-bottom:25rpx;'>查询办理结果</text>
+        <text>系统在收到使馆移民局或签证中心海关的审理结果后， 客服通知到申请人， 同时系统上也可以自行查询办理结果</text>
+      </view>
+    </view>
+  </view>-->
+
+  <view class='upperbody' style='margin-bottom: 10%;'>
+    <text style='text-align:center;padding: 25rpx 0 25rpx 0;border-bottom:1px solid grey'>签证图例</text>
+    <view class='body-image'>
+      <image style='margin: 5%;width: 55%;height:600rpx;' src='../../images/visa.jpg'></image>
+    </view>
+  </view>
+
+  <view class='buttons'>
+    <view class='startbutton'>
+      <button class='start' wx:if='{{!login}}' open-type="getUserInfo" bindgetuserinfo='onGetUserInfo'>开始办理</button>
+      <button class='start' wx:if='{{login}}'  bindtap='clickStart'>开始办理</button>
+    </view>
+    <view class='supportbutton'>
+    <button class='support' open-type="contact" bindtap='clickSupport'>
+      <view class='support-view'>
+        <image src='../../images/support.png'></image>
+        <text>客服</text>
+      </view>
+    </button>
+    </view>
+  </view>
+</view>

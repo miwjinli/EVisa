@@ -1,0 +1,111 @@
+/* pages/firstpage/main.wxss */
+.container{
+  padding: 0 0 25rpx 0;
+  position: absolute;
+  width:100%;
+}
+
+.heading{
+  position: absolute;
+  width:100%;
+  z-index: 1;
+}
+
+.headtitle{
+  top: 85%;
+  position: absolute;
+  height: 30%;
+  width: 90%;
+  margin-left:3%;
+  padding: 0 2% 0 2%;
+  border-radius: 20rpx;
+  background-color: white;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 30rpx;
+  color: grey;
+}
+
+.title-item{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-item image{
+  width: 85rpx;
+  height: 90rpx;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.body{
+  top: 65%;
+  padding-top: 3%;
+  padding-left: 10%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  margin-bottom: 10%;
+  background-color: white;
+}
+
+.bodycontent{
+  top: -50rpx;
+  width: 90%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.body-image{
+  width: 90%;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  height: 300rpx;
+  z-index: 2;
+}
+
+.logo{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.bodycontent text{
+  color: grey;
+  font-size: 30rpx;
+  padding: 10rpx 0 10rpx 0;
+}
+
+.footer{
+  top: 85%;
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  color: grey;
+  font-size: 30rpx;
+}
+
+.footer-item{
+  padding: 30rpx 0 30rpx 0;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.footer-item image{
+  width: 80rpx;
+  height: 100rpx;
+}

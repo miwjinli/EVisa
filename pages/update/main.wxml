@@ -1,0 +1,10 @@
+<!--pages/update/main.wxml-->
+<view class="container">
+  <view class="title">
+    <text>Malaysia e-visa application</text>
+    <text>处理中</text>
+  </view>
+  <view class="titledesc">
+    <text>请稍等</text>
+  </view>
+</view>
